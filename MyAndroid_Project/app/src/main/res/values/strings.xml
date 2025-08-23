@@ -1,0 +1,8 @@
+<resources>
+
+
+        <string name="app_name">MyDemoButton</string>
+
+        <string name="button_name">Login</string>
+
+</resources>
