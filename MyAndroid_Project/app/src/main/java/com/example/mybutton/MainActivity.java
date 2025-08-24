@@ -2,6 +2,7 @@ package com.example.mybutton;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -38,15 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (v.getId() == R.id.loginButtonId) {
 
-            Toast toast =Toast.makeText(MainActivity.this,"Login Button is Clicked",Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER,0,0);
-            toast.show();
+            Log.d("tag","Login Button is Clicked !");
 
         } else if (v.getId() == R.id.logoutButtonId) {
 
-            Toast toast =Toast.makeText(MainActivity.this,"Logout Button is Clicked !",Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER,0,0);
-            toast.show();
+            Log.d("tag","Logout Button is Clicked !");
 
         }
     }
