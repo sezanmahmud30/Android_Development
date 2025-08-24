@@ -1,6 +1,7 @@
 package com.example.mybutton;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -11,11 +12,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity {
 
     private Button loginButton,logoutButton;
 
     private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,22 +28,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textView = (TextView) findViewById(R.id.textViewId);
 
-    loginButton.setOnClickListener(this);
-    logoutButton.setOnClickListener(this);
+        Handler handler = new Handler();
+
+        loginButton.setOnClickListener(handler);
+        logoutButton.setOnClickListener(handler);
 
     }
+    class Handler implements View.OnClickListener{
 
-    @Override
-    public void onClick(View v) {
+        @Override
+        public void onClick(View v) {
 
-        if(v.getId() == R.id.loginButtonId){
-            textView.setText("Login Button is Clicked !");
+            if(v.getId()==R.id.loginButtonId){
+                textView.setText("Login Button is Clicked !");
+            }
+            else if(v.getId()==R.id.logoutButtonId){
+                textView.setText("Logout Button is Clicked !");
+            }
+
         }
-
-//        else dileo hoito jehetu 2 ta button ache !
-
-       if(v.getId() == R.id.logoutButtonId) {
-           textView.setText("Logout Button is Clicked !");
-       }
     }
 }
