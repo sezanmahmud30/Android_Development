@@ -11,8 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-//     int count = 0;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
     private Button loginButton,logoutButton;
 
     private TextView textView;
@@ -26,22 +26,22 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.textViewId);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                count++;
-//                textView.setText("Login Button is clicked "+count +" times");
+    loginButton.setOnClickListener(this);
+    logoutButton.setOnClickListener(this);
 
-                textView.setText("Login Button is clicked !");
-            }
-        });
+    }
 
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView.setText("Logout Button is clicked !");
-            }
-        });
+    @Override
+    public void onClick(View v) {
 
+        if(v.getId() == R.id.loginButtonId){
+            textView.setText("Login Button is Clicked !");
+        }
+
+//        else dileo hoito jehetu 2 ta button ache !
+
+       if(v.getId() == R.id.logoutButtonId) {
+           textView.setText("Logout Button is Clicked !");
+       }
     }
 }
