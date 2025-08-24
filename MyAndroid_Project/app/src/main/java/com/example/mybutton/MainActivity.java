@@ -12,8 +12,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    int count = 0;
-    private Button loginButton;
+//     int count = 0;
+    private Button loginButton,logoutButton;
+
     private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +22,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginButton = (Button) findViewById(R.id.loginButtonId);
+        logoutButton =(Button) findViewById(R.id.logoutButtonId);
+
         textView = (TextView) findViewById(R.id.textViewId);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                count++;
-                textView.setText("Login Button is clicked "+count +" times");
+//                count++;
+//                textView.setText("Login Button is clicked "+count +" times");
+
+                textView.setText("Login Button is clicked !");
+            }
+        });
+
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setText("Logout Button is clicked !");
             }
         });
 
