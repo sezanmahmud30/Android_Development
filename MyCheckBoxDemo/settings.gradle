@@ -19,7 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyImageViewDemo"
-include ':app'
-include ':app'
+rootProject.name = "MyCheckBoxDemo"
 include ':app'

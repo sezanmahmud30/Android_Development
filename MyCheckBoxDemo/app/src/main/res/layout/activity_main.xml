@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#54AB89"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<TextView
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/title_text"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+/>
+    <CheckBox
+        android:id="@+id/milkCheckBoxId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/milk_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+/>
+
+    <CheckBox
+        android:id="@+id/teaCheckBoxId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/tea_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        /> <CheckBox
+
+    android:id="@+id/coffeeCheckBoxId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="@string/coffee_text"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    />
+
+    <CheckBox
+        android:id="@+id/milk_teaCheckBoxId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/milk_tea_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/orderButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/resultTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

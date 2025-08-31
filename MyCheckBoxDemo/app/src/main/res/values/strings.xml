@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyCheckBoxDemo</string>
+    <string name="title_text">What do you want to buy ?</string>
+
+    <string name="milk_text">Milk</string>
+    <string name="tea_text">Raw Tea</string>
+    <string name="coffee_text">Coffee</string>
+    <string name="milk_tea_text">Milk Tea</string>
+
+
+    <string name="button_text">Order</string>
+</resources>

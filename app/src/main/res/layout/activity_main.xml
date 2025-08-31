@@ -17,10 +17,12 @@
         android:layout_height="350dp"
         android:scaleType="fitCenter"
         android:src="@drawable/image2"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="2dp"
         />
 
-    <TextView
+
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sezan Mahmud"
@@ -28,12 +30,13 @@
         android:textColor="@color/black"
         android:textSize="20sp"/>
 
+
     <ImageView
         android:id="@+id/imageView1Id"
         android:layout_width="300dp"
         android:layout_height="350dp"
         android:scaleType="fitCenter"
         android:src="@drawable/image1"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="2dp"
         />
 </LinearLayout>
