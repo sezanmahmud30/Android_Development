@@ -1,5 +1,6 @@
 package com.example.mytimepickerdemo;
 
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,11 +13,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TimePicker timePicker;
+
     private TextView textView;
     private Button button;
+    private TimePickerDialog timePickerDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,22 +26,39 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        timePicker =(TimePicker) findViewById(R.id.timePickerId);
-        timePicker.setIs24HourView(true);
+
         textView = (TextView) findViewById(R.id.textViewId);
         button = (Button) findViewById(R.id.buttonId);
 
+        button.setOnClickListener(this);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    }
 
-                String time = timePicker.getCurrentHour() + " : " + timePicker.getCurrentMinute();
+    @Override
+    public void onClick(View v) {
 
-                textView.setText(time);
+        TimePicker timePicker = new TimePicker(this);
 
-            }
-        });
+        int currentHour = timePicker.getCurrentHour();
+
+        int currentMinute = timePicker.getCurrentMinute();
+
+
+
+
+        timePickerDialog = new TimePickerDialog(MainActivity.this,
+
+                new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+                        textView.setText(hourOfDay + ":" + minute);
+
+                    }
+                },currentHour,currentMinute,true);
+
+            timePickerDialog.show();
+
 
     }
 }
