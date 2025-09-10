@@ -6,14 +6,34 @@
     <string name="pakistan_button">Pakistan</string>
 
     <string name="bangladesh_text">
-        Bangladesh officially the People Republic of Bangladesh is a country in South Asia.\nIt is the eighth-most populous country in the world.\nDhaka, the capital and largest city, is the nation\'s political, financial, and cultural centre.\nChittagong is the second-largest city and the busiest port of the country.
+        Bangladesh officially the People\'s Republic of Bangladesh is a country in South Asia.\n
+        It is the eighth-most populous country in the world.\n
+        Dhaka, the capital and largest city, is the nation\'s political, financial, and cultural centre.\n
+        Chittagong is the second-largest city and the busiest port of the country.\n
+        Population: Densely populated, with over 171 million people, making it one of the most populous countries in the world. \n
+        Language: Bengali is the official language. \n
+        Religion: Islam is the dominant religion, with a significant Hindu minority. \n
+        Culture: A traditional culture where the sari is common attire for women, and rice and curry are staple foods. \n
+        Cricket is the most popular sport.
     </string>
 
     <string name="india_text">
-        India officially the Republic of India is a country in South Asia.\nIt is the seventh-largest country by area.\nIt became the most populous country in 2023 and, since its independence in 1947, the world\'s most populous democracy.
+        India officially the Republic of India is a country in South Asia.\n
+        It is the seventh-largest country by area.\n
+        It became the most populous country in 2023 and, since its independence in 1947, the world\'s most populous democracy.\n
+        India\'s geography is diverse, featuring the Himalayan mountains in the north, vast plains in the north-central region, a large peninsula with the Deccan Plateau, and extensive coastlines along the Arabian Sea and Bay of Bengal.\n
+        India has one of the world\'s oldest civilizations and is a cradle of many religions, including Hinduism, Buddhism, Sikhism, and Jainism. It is a secular, federal, parliamentary republic with a complex system of government.
     </string>
 
     <string name="pakistan_text">
-        Pakistan officially the Islamic Republic of Pakistan is a country in South Asia.\nIt is the fifth-most populous country, with a population of over 241.5 million,\nhaving the second-largest Muslim population as of 2023.\nIslamabad is the nation\'s capital, while Karachi is its largest city and financial centre.
+        Pakistan officially the Islamic Republic of Pakistan is a country in South Asia.\n
+        It is the fifth-most populous country, with a population of over 241.5 million,having the second-largest Muslim population as of 2023.\n
+        Islamabad is the nation\'s capital, while Karachi is its largest city and financial centre.\n
+        Pakistan, populous multiethnic country of South Asia.\n
+        Having a predominately Indo-Iranian speaking population, Pakistan has historically and culturally been associated with its neighbors Iran, Afghanistan, and India.\n
+        Since Pakistan and India achieved independence from British rule on August 14–15, 1947, celebrated as Independence Day, Pakistan has been distinguished from its larger southeastern neighbor by its overwhelmingly Muslim population (as opposed to the predominance of Hindus in India).\n
+        Pakistan has struggled throughout its existence to attain political stability and sustained social development.\n
+        Its capital is Islamabad, in the foothills of the Himalayas in the northern part of the country, and its largest city is Karachi, in the south on the coast of the Arabian Sea.
+
     </string>
 </resources>
