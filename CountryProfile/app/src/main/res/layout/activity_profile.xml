@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,9 +9,14 @@
     android:background="#009688"
     tools:context=".ProfileActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <ImageView
-        android:src="@drawable/bangladesh_national"
+        android:src="@mipmap/ic_launcher"
         android:scaleType="fitXY"
         android:id="@+id/imageViewID"
         android:layout_width="match_parent"
@@ -19,15 +24,17 @@
         />
 
     <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/textViewId"
         android:layout_marginTop="25dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:text=""
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
+        android:layout_height="wrap_content"
         />
 
+        </LinearLayout>
 
 
-</LinearLayout>
+
+</ScrollView>
