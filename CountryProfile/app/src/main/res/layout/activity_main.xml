@@ -10,8 +10,16 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="@string/time_text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
     <AnalogClock
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />

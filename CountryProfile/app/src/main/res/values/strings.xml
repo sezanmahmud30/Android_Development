@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">CountryProfile</string>
 
+
+    <string name="time_text">Current Time</string>
+
+
+
     <string name="bangladesh_button">Bangladesh</string>
     <string name="india_button">India</string>
     <string name="pakistan_button">Pakistan</string>
+
+    <string name="title_text">This is a Title</string>
+
+    <string name="message_text">Do you want to Exit !</string>
 
     <string name="bangladesh_text">
         Bangladesh officially the People\'s Republic of Bangladesh is a country in South Asia.\n
@@ -14,8 +23,13 @@
         Language: Bengali is the official language. \n
         Religion: Islam is the dominant religion, with a significant Hindu minority. \n
         Culture: A traditional culture where the sari is common attire for women, and rice and curry are staple foods. \n
-        Cricket is the most popular sport.
-    </string>
+        Cricket is the most popular sport.\n
+        The Sundarbans is the world\'s largest mangrove forest, 4,000 square miles.\n
+        Bangladesh emerged from Pakistan after 1971 independence.\n
+        Bangladesh\'s national animal is the Royal Bengal Tiger.\n
+        Bangladesh is the world\'s most densely populated major nation.\n
+        Bangladesh has 6 seasons.
+       </string>
 
     <string name="india_text">
         India officially the Republic of India is a country in South Asia.\n
