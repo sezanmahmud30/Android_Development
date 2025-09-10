@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CountryProfile</string>
+
+
+    <string name="bangladesh_button">Bangladesh</string>
+    <string name="india_button">India</string>
+    <string name="pakistan_button">Pakistan</string>
+
+
+
+
+    <string name="bangladesh_text">
+        Bangladesh \n
+        Officially the Peoples Republic of Bangladesh is a country in South Asia.\n
+        It is the eighth-most populous country in the world.\n
+        Dhaka, the capital and largest city, is the nation's political, financial, and cultural centre.\n
+        Chittagong is the second-largest city and the busiest port of the country.
+    </string>
+
+
+    <string name="india_text">
+        India\n
+        Officially the Republic of India is a country in South Asia.\n
+        It is the seventh-largest country by area \n
+        the most populous country since 2023 and, since its independence in 1947 \n
+        the world's most populous democracy.
+    </string>
+
+
+    <string name="pakistan_text">
+        Pakistan\n
+        Officially the Islamic Republic of Pakistan is a country in South Asia.\n
+        It is the fifth-most populous country, with a population of over 241.5 million,\n
+        having the second-largest Muslim population as of 2023. Islamabad is the nation's capital,\n
+        while Karachi is its largest city and financial centre.
+    </string>
+
+</resources>
