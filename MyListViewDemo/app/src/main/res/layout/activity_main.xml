@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:background="#3326E9CB"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:listSelector="#6195D7"
+        android:dividerHeight="2dp"
+        android:divider="#ff22"
+        android:id="@+id/listViewId"
+        android:layout_width="481dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
