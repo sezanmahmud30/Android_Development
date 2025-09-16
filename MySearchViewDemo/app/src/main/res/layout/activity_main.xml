@@ -5,21 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7E5ABC"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:background="#3326E9CB"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
-
-    <ListView
-        android:listSelector="#19A8C5"
-        android:id="@+id/listViewId"
+    <SearchView
+        android:queryHint="@string/search_text"
+        android:id="@+id/searchViewId"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="#C70D0D"
-        android:dividerHeight="2dp"
-        >
+        android:layout_height="wrap_content">
 
-        </ListView>
+
+    </SearchView>
+    
+    
+    <ListView
+        android:id="@+id/listViewId"
+        android:layout_width="481dp"
+        android:layout_height="match_parent"
+        android:divider="#ff22"
+        android:dividerHeight="2dp"
+        android:listSelector="#6195D7" />
 
 </LinearLayout>
