@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
 
     private GridView gridView;
 
-    int[] flags = {R.drawable.afghanistan, R.drawable.armenia, R.drawable.azerbaijan, R.drawable.bahrain, R.drawable.bhutan,
-            R.drawable.bangladesh, R.drawable.china, R.drawable.india, R.drawable.japan, R.drawable.nepal, R.drawable.pakistan,
-            R.drawable.sri_lanka};
+    int[] flags = {R.drawable.afghanistan, R.drawable.armenia, R.drawable.azerbaijan,
+            R.drawable.bahrain, R.drawable.bangladesh, R.drawable.bhutan,
+            R.drawable.china, R.drawable.india, R.drawable.japan, R.drawable.nepal,
+            R.drawable.pakistan, R.drawable.sri_lanka};
 
     String[]  countryNames;
 
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.gridViewId);
 
-        
+        CustomAdapter adapter = new CustomAdaptar(this,countryNames,flags);
+        gridView.setAdapter();
 
     }
 }
