@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.gridViewId);
 
-        CustomAdapter adapter = new CustomAdaptar(this,countryNames,flags);
-        gridView.setAdapter();
+        CustomAdapter adapter = new CustomAdapter(this,countryNames,flags);
+        gridView.setAdapter(adapter);
 
     }
 }
