@@ -1,9 +1,12 @@
 package com.example.myspinnerdemo2;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class CustomAdapter extends BaseAdapter {
 
@@ -21,7 +24,7 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return countryNames.length;
     }
 
     @Override
@@ -35,7 +38,24 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+    public View getView(int i, View view, ViewGroup viewGroup) {
+
+        if(view == null){
+
+            LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = layoutInflater.inflate(R.layout.sample_view,null,false);
+        }
+
+        ImageView imageView = view.findViewById(R.id.imageViewId);
+        imageView.setImageResource(flags[i]);
+
+        TextView country = view.findViewById(R.id.countrynameTextViewId);
+        country.setText(countryNames[i]);
+
+
+        TextView populationNumber = view.findViewById(R.id.populationTexeViewId);
+        populationNumber.setText(population[i]);
+
+        return view;
     }
 }
