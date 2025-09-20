@@ -1,6 +1,7 @@
 package com.example.myspinnerdemo;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -35,5 +36,15 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.sample_view,R.id.textViewSampleId,countryNames);
         spinner.setAdapter(adapter);
+
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String value = spinner.getSelectedItem().toString();
+                textView.setText(value);
+            }
+        });
     }
 }
