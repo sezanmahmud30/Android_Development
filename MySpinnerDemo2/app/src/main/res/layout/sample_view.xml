@@ -18,10 +18,9 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:paddingLeft="10dp"
-        android:orientation="vertical"
-        />
+        android:orientation="vertical">
 
-    <TextView
+        <TextView
         android:id="@+id/countrynameTextViewId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +30,7 @@
         android:textColor="#E70C76"
         />
 
-    <TextView
+        <TextView
         android:id="@+id/populationTexeViewId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,4 +39,9 @@
         android:text="16 million"
 
         />
+
+    </LinearLayout>
+
+
+
 </LinearLayout>
