@@ -9,6 +9,8 @@
     tools:context=".MainActivity">
 
     <ProgressBar
+        android:progressTint="#D40035"
+        android:progressBackgroundTint="#4CAF50"
         android:id="@+id/progressBarId"
         android:layout_margin="50dp"
         android:layout_width="match_parent"
