@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyProgressBarDemo" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Base.Theme.MySplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.MyProgressBarDemo" parent="Base.Theme.MyProgressBarDemo" />
+    <style name="Theme.MySplashScreen" parent="Base.Theme.MySplashScreen" />
 </resources>
