@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+
+        MaterialToolbar toolbar = findViewById(R.id.topAppBar);
+        setSupportActionBar(toolbar);
 
     }
 

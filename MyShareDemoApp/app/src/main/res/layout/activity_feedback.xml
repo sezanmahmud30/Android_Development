@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:background="#54e687"
+    android:padding="25dp"
+    android:background="#BF2196F3"
     android:orientation="vertical"
     android:weightSum="4"
     tools:context=".FeedbackActivity">
@@ -38,8 +38,8 @@
         >
 
         <EditText
-            android:id="@+id/messageEditText"
-            android:hint="Enter your Feedback"
+            android:id="@+id/messageEditTextId"
+            android:hint="Enter your Message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
